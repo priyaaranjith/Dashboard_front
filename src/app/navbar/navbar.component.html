@@ -1,26 +1,39 @@
-<header class="border">
+<!-- <header class="border" style="position: fixed; top: 0; width: 100%; margin-bottom: ;">
   <div class="logo">
     <img src="assets/images/stryker logo.png" alt="Logo">
   </div>
   <div class="search-bar">
-    <input type="text" placeholder="Search...">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
   </div>
   <div class="profile">
-    <img src="https://cdn4.iconfinder.com/data/icons/peppyicons-rounded/512/user8-512.png" alt="Profile Picture"
-      class="profile-picture">
+    <img src="assets\images\boss.png" alt="Profile Picture" class="profile-picture">
   </div>
   <div class="admin-dropdown">
-    <button class="dropdown-btn">Admin <i class="fas fa-caret-down"></i></button>
-    <div class="dropdown-content">
-      <a href="#">Option 1</a>
-      <a href="#">Option 2</a>
-      <a href="#">Option 3</a>
-    </div>
+    <button class="dropdown-btn ">Admin<i class="fas fa-caret-down"></i></button>
   </div>
   <div class="settings-icon">
     <i class="fas fa-cog"></i>
   </div>
-</header>
+</header> -->
+<nav class="navbar navbar-expand-lg fixed-top" style="width: 96%; margin-left: 60px; background-color: rgb(255, 255, 255); padding: 0;">
+  <div class="container-fluid">
+    <a class="navbar-brand" style="margin: 0;" href="#">
+      <img src="assets/images/stryker logo.png" alt="Bootstrap" height="50">
+    </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="nav-item mx-auto">
+          <input class="form-control me-2" style="width: 300px; margin: 0 auto;" type="search" placeholder="Search" aria-label="Search">
+        </div>
+      <form class="d-flex">
+        <img src="assets\images\boss.png" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 30px;" alt="Profile Picture" class="profile-picture">
+        <i class="fas fa-cog" style="height: 30px; margin-top: 10px;"></i>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+
 <nav class="side-nav border">
   <a href="#"><i class="fas fa-qrcode"></i></a>
 </nav>

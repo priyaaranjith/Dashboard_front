@@ -1,15 +1,15 @@
 .card-container {
 
   display: flex;
-
 }
 
 .card {
   width: 200px;
-  height: 200px;
+  height: 210px;
   border-radius: 10px;
   background-color: light(0 99% 0% / 0.088);
   margin-right: 1px;
+
 }
 
 .card-content {
@@ -37,6 +37,9 @@
   margin-right: 8px;
 }
 
+.map-container {position:absolute;top: 20px; }
+
+
 .dot-blue {
   background-color: blue;
 }
@@ -58,5 +61,9 @@
 .progress {
   padding: 0;
 }
+
+
+
+
 
 

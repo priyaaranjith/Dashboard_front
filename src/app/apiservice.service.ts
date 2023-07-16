@@ -10,11 +10,25 @@ export class ApiserviceService {
 
    fetchdashboard =()=>
   {
-    return this.http.get("http://localhost:8081/views")
+    return this.http.get("http://localhost:8081/dateFilter")
   }
 
-  fetchhospital =()=>
+  dateFilterHospital =(date:any)=>
   {
-    return this.http.get("http://localhost:8081/viewall")
+    return this.http.get("http://localhost:8081/dateFilterHospital/"+date)
   }
+  dateFilterConsumables =(date:any)=>
+  {
+    return this.http.get("http://localhost:8081/dateFilterConsumables/"+date)
+  }
+  dateFiler=(date:any)=>{
+    return this.http.get("http://localhost:8081/dateFilter/"+date)
+  }
+  dateFilterProcedure=(date:any)=>{
+    return this.http.get("http://localhost:8081/FilterProceduresByDate/"+date)
+  }
+  dateFilterReturn=(date:any)=>{
+    return this.http.get("http://localhost:8081/FilterReturnsByDate/"+date)
+  }
+  
 }
